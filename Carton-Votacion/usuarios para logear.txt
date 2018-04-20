@@ -1,0 +1,53 @@
+recalco que el votante solo tienes 20 segundos para votar despues de 20 segundo 
+la pagina se cierra automaticammente
+
+var usuariosJSON = {
+    "usuarios":[
+        {
+            "Primer_Apellido":"bornachera",
+            "Segundo_Apellido":"lasso",
+            "Nombres":"alex ivan",
+            "numero_cc":"15134256",
+            "rol":"Votante",
+            "voto":"false",
+            "clave":"12348"
+        },
+        {
+            "Primer_Apellido":"gomez",
+            "Segundo_Apellido":"rodriguez",
+            "Nombres":"andres camilo",
+            "numero_cc":"15158146",
+            "rol":"Votante",
+            "voto":"false",
+            "clave":"12347"
+        },
+        {
+            "Primer_Apellido":"gomez",
+            "Segundo_Apellido":"rodriguez",
+            "Nombres":" Camilo",
+            "numero_cc":"1581436325",
+            "rol":"Votante",
+            "voto":"false",
+            "clave":"12346"
+        },
+        {
+            "Primer_Apellido":"lasso",
+            "Segundo_Apellido":"perez",
+            "Nombres":" Alex Ivan ",
+            "numero_cc":"158116325",
+            "rol":"Jurado",
+            "voto":"false",
+            "clave":"1236846"
+        },
+        {
+            "Primer_Apellido":"gonzales",
+            "Segundo_Apellido":"gomez",
+            "Nombres":"daniel jesus",
+            "numero_cc":"151516357",
+            "rol":"Jurado",
+            "voto":"false",
+            "clave":"12345"
+        }
+        
+    ]
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/stilojurado.css">
+    <title>Listado</title>
+</head>
+
+<body>
+    <div>
+        <div class="nav">
+
+            <div>
+                <span class="nomj">Nombre Jurado</span>
+                <span class="cerrS">Cerrar Sesion</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="fixed-action-btn">
+            <canvas id="canvas" width="150" height="150"></canvas>
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal bottom-sheet">
+            <div class="modal-content">
+                <h4>Editar</h4>
+                <div class="row">
+                    <div class="input-field col s4">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" name="primerApellido" type="text" class="inputData validate">
+                        <label id="primerApellidoLabel" for="icon_prefix" class="active">Primer Apellido</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" name="segundoApellido" type="text" class="inputData validate">
+                        <label id="segundoApellidoLabel" for="icon_prefix" class="active">Segundo Apellido</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" name="nombres" type="text" class="inputData validate">
+                        <label id="nombresLabel" for="icon_prefix" class="active">Nombres</label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="botonEditar" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Enviar</button>
+            </div>
+        </div>
+
+
+
+        <div class="divT ">
+            <input type="text" id="myInput" placeholder="Buscar por cedula" title="Escribe una cedula">
+            <table class=" centered  highlight responsive-table  " id="tableRegistros">
+                <tr>
+                    <th rowspan="2">
+                        ORD
+                    </th>
+                    <th rowspan="2">No c.c, Verifique el
+                        <br> numero</th>
+                    <th colspan="3">Apellidos y Nombres Segun Cedula</th>
+                </tr>
+                <tr>
+                    <th>Primer Apellido</th>
+                    <th>Segundo Apellido</th>
+                    <th>Nombres</th>
+                    <th>Acciones</th>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>
+                            <input type="checkbox" id="test1" />
+                            <label for="test1"></label>
+                        </p>
+                    </td>
+                    <td>515454151</td>
+                    <td>
+                        <span>Gutierrez</span>
+                    </td>
+                    <td>
+                        <span>Gonzalez</span>
+                    </td>
+                    <td>
+                        <span>Pedro</span>
+                    </td>
+                    <td>
+                        <i class="material-icons " href="#modal1">create</i>
+                        <i class="material-icons">delete</i>
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
+
+<script src="../js/json.js"></script>
+<script src="Jurado.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<link rel="stylesheet" href="../css/materialize.css">
+<script src="../js/materialize.js"></script>
